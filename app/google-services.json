@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502334935634",
+    "project_id": "pandaworld-6ba55",
+    "storage_bucket": "pandaworld-6ba55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502334935634:android:deed1bbf951ce045af058b",
+        "android_client_info": {
+          "package_name": "com.example.pandaworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVqekjn6JSTzhnTu0f8ev6R9qC3a8jzVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

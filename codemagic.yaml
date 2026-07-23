@@ -1,0 +1,23 @@
+workflows:
+  android-workflow:
+    name: Android APK Build
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      java: 17
+    scripts:
+      - name: Set up build
+        script: |
+          chmod +x gradlew || true
+      - name: Build Android APK
+        script: |
+          gradle assembleDebug
+    artifacts:
+      - app/build/outputs/apk/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - adnan.786el@gmail.com
+        notify:
+          success: true
+          failure: true
