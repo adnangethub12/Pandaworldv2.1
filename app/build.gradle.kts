@@ -75,7 +75,9 @@ android {
 // to match the convention used in Web projects.
 secrets {
   propertiesFileName = ".env"
-  defaultPropertiesFileName = ".env.example"
+  if (rootProject.file(".env.example").exists()) {
+    defaultPropertiesFileName = ".env.example"
+  }
 }
 
 googleServices { missingGoogleServicesStrategy = MissingGoogleServicesStrategy.WARN }
